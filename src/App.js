@@ -53,6 +53,10 @@ SetNewArray(yas)
         </tbody>
       </table>
 
+      <p>Montant de la commande: 
+        {newArray.map(b => b.quantity * b.price).reduce((c, d) => c + d)}
+      </p>
+
 
     </div>
   );
